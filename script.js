@@ -68,8 +68,16 @@ function show_projects()
         <h6><a class="non_underline-link" href=""> Image Captioning with LSTMs (Assignment of Stanford Convolutional Neural Networks for Visual Recognition)</a></h6>
         <img class="proj-image width-90" src="data/caption.jpg" alt="">
     </div>
+    
+     <div class="proj-item">
+    <h6><a class="non_underline-link" href="">Network Visualization (Saliency Maps, Class visualization) (Stanford CS231n)</a></h6>
+    <img class="proj-image width-90" src="data/CNN_visualize.jpg" alt="">
+    </div>
 
-
+    <div class="proj-item">
+    <h6><a class="non_underline-link" href="">Generative Adversarial Networks (Least Squares GAN, Deeply Convolutional GANs) (Stanford CS231n)</a></h6>
+    <img class="proj-image width-90" src="data/GANs.png" alt="">
+    </div>
 
 
     `
