@@ -4,7 +4,7 @@ document.getElementById("home").onclick = function()
     document.getElementById("content").innerHTML = `
     <div class="content-header">
     <h4 id="greetings">Welcome !</h4>
-    <h6>I am Amir Esmaeilpour Moghaddam, currently a B.Sc. computer engineering student at the <a class="non_underline-link" href="https://en.kntu.ac.ir/">K. N. Toosi University of Technology</a>, Iran.</h6>
+    <h6>I am Amir Esmaeilpour Moghaddam, currently a Ph.D. Student at University of Illinois Chicago. I have a B.Sc. in computer engineering from the <a class="non_underline-link" href="https://en.kntu.ac.ir/">K. N. Toosi University of Technology</a>, Iran.</h6>
 </div>
 <div id="content-text">
     <p>
