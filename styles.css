@@ -44,12 +44,20 @@ li { margin-bottom: 4px; }
 }
 
 #avatar {
-  width: 160px;
-  height: 160px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center top;
   display: block;
   margin: 0 auto 14px;
+}
+
+@media (max-width: 650px) {
+  #avatar {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 #sidebar h1 {
