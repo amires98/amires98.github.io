@@ -1,0 +1,161 @@
+/* ── Reset & base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #222;
+  background: #fff;
+}
+
+a { color: #1a52a8; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+h2 {
+  font-size: 1.05rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+  margin-bottom: 14px;
+  color: #111;
+}
+
+ul { padding-left: 1.4em; }
+li { margin-bottom: 4px; }
+
+/* ── Layout ── */
+#wrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: 900px;
+  margin: 48px auto;
+  padding: 0 24px;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+/* ── Sidebar ── */
+#sidebar {
+  flex: 0 0 190px;
+  text-align: center;
+}
+
+#avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 14px;
+}
+
+#sidebar h1 {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.affiliation {
+  font-size: 0.82rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+#contact-links {
+  list-style: none;
+  padding: 0;
+  font-size: 0.82rem;
+}
+
+#contact-links li { margin-bottom: 5px; }
+
+/* ── Main content ── */
+#content {
+  flex: 1;
+  min-width: 0;
+}
+
+section {
+  margin-bottom: 32px;
+}
+
+#bio p { margin-bottom: 10px; }
+
+/* ── News ── */
+#news-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+#news-table tr { vertical-align: top; }
+.news-date {
+  white-space: nowrap;
+  color: #555;
+  width: 80px;
+  padding-right: 12px;
+  padding-bottom: 6px;
+}
+
+/* ── Publications ── */
+.pub-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.pub-img-wrap { flex: 0 0 130px; }
+.pub-img { width: 130px; border: 1px solid #ddd; }
+
+.pub-title { font-weight: bold; margin-bottom: 2px; }
+.pub-authors { font-size: 0.88rem; margin-bottom: 2px; }
+.pub-venue { font-size: 0.88rem; color: #555; margin-bottom: 4px; }
+.pub-links { font-size: 0.85rem; }
+
+/* ── Projects ── */
+.proj-item { margin-bottom: 14px; }
+.proj-title { font-weight: bold; }
+.proj-meta { font-weight: normal; color: #666; font-size: 0.88rem; }
+.proj-item p:last-child { font-size: 0.88rem; color: #444; margin-top: 2px; }
+
+/* ── Education / Experience ── */
+.edu-table, .exp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+.edu-table tr, .exp-table tr { vertical-align: top; }
+.edu-year, .exp-date {
+  white-space: nowrap;
+  color: #555;
+  width: 110px;
+  padding-right: 14px;
+  padding-bottom: 12px;
+}
+
+/* ── Courses ── */
+.course-list { font-size: 0.88rem; }
+.course-list li { margin-bottom: 5px; }
+
+/* ── Footer ── */
+footer {
+  margin-top: 24px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* ── Mobile ── */
+@media (max-width: 650px) {
+  #wrapper {
+    flex-direction: column;
+    margin: 24px auto;
+    gap: 24px;
+  }
+  #sidebar { flex: none; width: 100%; }
+  .pub-item { flex-direction: column; }
+  .pub-img-wrap { flex: none; }
+  .pub-img { width: 100%; max-width: 260px; }
+}

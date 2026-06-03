@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ' *)",
+      "Bash(pip3 install *)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(python3 build_cv.py)"
+    ]
+  }
+}
